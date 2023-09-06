@@ -95,7 +95,7 @@ p {
 /* grootte van de kaart */
 
 .card {
-    margin: 100px auto 0;
+    margin: 100px auto 20px;
     width: 400px;
     height: 600px;
     perspective: 1000px;
