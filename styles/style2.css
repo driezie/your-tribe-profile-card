@@ -2,36 +2,59 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 html {
     background-color: #f5f5f5f5;
 }
 
-h1,
+h1 {
+    font-family: 'Poppins';
+    margin: 0;
+    color: #ffff;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
 h2 {
     font-family: 'Poppins';
-    margin: 2rem 0 1rem;
+    margin: 0;
     color: #DCB16A;
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 1rem 0rem;
 }
 
 button {
     position: absolute;
     right: 1rem;
     top: 1rem;
-    width: 2.5rem;
+    width: auto;
     height: 2.5rem;
     padding: .25rem;
     border: none;
-    border-radius: 50%;
     /* icon kleiner maken */
-    transform: scale(.8);
+    background-color: #ffffff00;
     transition: .25s;
-    background-color: #DCB16A;
     cursor: pointer;
+    color: white;
+    font-family: "Poppins";
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+button .fa-angles-right,
+button .fa-angles-left {
+    font-size: .8rem;
 }
 
 button:hover {
-    background-color: #bf995b;
+    margin-right: 5px;
 }
 
 
@@ -106,17 +129,27 @@ p {
     flex-direction: column;
 }
 
+.front {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #bf995b 100%), url(../assets/me.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: end;
+}
+
 .front,
 .back {
-    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
     display: flex;
     align-items: center;
+}
+
+.back {
     justify-content: center;
 }
 
 .front h2 {
     color: #FFF;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .back {
@@ -135,7 +168,7 @@ p {
 
 i {
     color: white;
-    padding: 0 30px;
+    padding: 0 20px;
     font-size: 30px;
 }
 
@@ -144,7 +177,7 @@ a i {
 }
 
 a:hover i {
-    color: #DCB16A;
+    color: #cacaca;
     transition: 0.3 ease-in-out;
     /* animatie voor socials */
     animation-name: shake;
@@ -154,16 +187,4 @@ a:hover i {
 button i {
     font-size: 20px;
     padding: 0;
-}
-
-@media only screen and (max-width: 600px) {
-    .card_face .front {
-        height: auto;
-    }
-    .socials {
-        margin: 20px 0;
-    }
-    dl {
-        padding: 1.5rem 0;
-    }
 }
