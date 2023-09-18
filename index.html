@@ -11,58 +11,63 @@
 </head>
 
 <body>
-    <!-- <div class="loading-screen" id="loading">
-        <div class="animation-div" id="loading-center">
-            <h2>
-                Jelte Cost
-            </h2>
-            <h3>
-                FDND Visitekaartje
-            </h3>
-        </div>
-    </div> -->
-    <div class="designs-buttons">
-        <a href="./index.html">Design 1</a>
-        <a href="./index2.html">Design 2</a>
-    </div>
-    <article class="card" id="card">
-        <div class="card_inner">
-            <div class="card_face front">
-                <button class="swipe-button" onclick="turn()">
-                    Click me <i class="fa-solid fa-angles-right"></i>
-                </button>
-                <headers class="header">
-                    <h1>Jelte</h1>
-                    <p><em>Front-end developer</em></p>
-                </headers>
-
-                <div class="socials">
-                    <a href="https://github.com/driezie" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://x.com/DevvJust" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://codepen.io/driezie" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-                </div>
-
-            </div>
-            <div class="card_face back">
-                <p class="info">
-                    <h2>My skills</h2>
-                    <p>I'm a font-end developer working with a lot of <u>passion</u> and fun. I'm always ready to make new designs and ideas to add to my projects
-                    </p>
-                    <p class="info">
+    <ul class="cycle-buttons">
+        <li>
+            <a href="./index.html">Cycle 2</a>
+        </li>
+        <li>
+            <a href="./index2.html">Cycle 1</a>
+        </li>
+    </ul>
+    <div class="container">
+        <article class="card" id="card">
+            <div class="card_inner">
+                <section class="front">
+                    <button onclick="turn()">
+                        Click me <i class="fa-solid fa-angles-right"></i>
+                    </button>
+                    <header>
+                        <h1>Jelte</h1>
+                        <p>Front-end developer</p>
+                    </header>
+    
+                    <ul class="socials">
+                        <li>
+                            <a href="https://github.com/driezie" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/DevvJust" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/driezie" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                        </li>
+                    </ul>
+    
+                </section>
+                <section class="back">
+                    <article>
+                        <h2>My skills</h2>
+                        <p>I'm a font-end developer working with a lot of <u>passion</u> and fun. I'm always ready to make new designs and ideas to add to my projects
+                        </p>
+                    </article>
+                    <article>
                         <h2>Music 🎵</h2>
                         <p>I absolutely <u>LOVE</u> to play music. I play piano but also arcoustic guitar and electric guitar. I love to play in train stations to make other people happy with my music</p>
-                    </p>
-                    <p class="info">
-                        <h2>The rest...</h2>
-                        <p>Movies and films are my favourite thing to do and watch 🙃</p>
-                    </p>
-
-                    <button onclick="turn()">
-                        <i class="fa-solid fa-angles-left"></i> go back
-                    </button>
+                    </article>
+                        <article>
+                            <h2>The rest...</h2>
+                            <p>Movies and films are my favourite thing to do and watch 🙃</p>
+                        </article>
+    
+                        <button onclick="turn()">
+                            <i class="fa-solid fa-angles-left"></i> go back
+                        </button>
+                </section>
             </div>
-        </div>
-    </article>
+        </article>
+
+    </div>
+    
     <script src="scripts/script.js"></script>
 </body>
 <script src="https://kit.fontawesome.com/b1b2df5e00.js" crossorigin="anonymous"></script>
